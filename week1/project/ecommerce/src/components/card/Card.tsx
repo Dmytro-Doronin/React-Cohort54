@@ -1,5 +1,6 @@
 import styles from './card.module.scss'
 import type {ProductType} from "../../types/productType.ts";
+import {replaceFake} from "../../utils/replace-fake.ts";
 
 
 type CardProps = {
@@ -9,7 +10,6 @@ type CardProps = {
 export const Card = ({product}: CardProps) => {
 
     const {title, description, image} = product;
-
     return (
         <div className={`${styles.open} ${styles.card} ${styles.dark} ${styles.fadeUp}`}>
             <span className={`${styles.shine}`}></span>
@@ -20,8 +20,8 @@ export const Card = ({product}: CardProps) => {
             <span className={`${styles.glow} ${styles['glow-bright']} ${styles['glow-bottom']}`}></span>
             <div className={styles.inner}>
                 <img className={styles['card-img']} src={image} alt={title}/>
-                <h3>${title}</h3>
-                <p className={styles.description}>${description}</p>
+                <h3>{replaceFake(title)}</h3>
+                <p className={styles.description}>{replaceFake(description)}</p>
             </div>
         </div>
     );

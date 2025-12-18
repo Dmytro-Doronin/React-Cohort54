@@ -1,14 +1,14 @@
 import {Button} from "../button/Button.tsx";
 
 import styles from './buttonList.module.scss'
-import type {categoriesType} from "../../types/catogoriesType.ts";
+import type {categoriesType} from "../../types/categoriesType.ts";
 type ButtonListProps = {
     currentCategory: categoriesType;
     categories: categoriesType[];
-    callback: (category: categoriesType) => void;
+    onChangeCategory: (category: categoriesType) => void;
 };
 
-export const ButtonList = ({ currentCategory, categories, callback }: ButtonListProps) => {
+export const ButtonList = ({ currentCategory, categories, onChangeCategory }: ButtonListProps) => {
 
     return (
         <div className={styles.buttonList}>
@@ -16,7 +16,7 @@ export const ButtonList = ({ currentCategory, categories, callback }: ButtonList
                 <Button
                     key={category}
                     variant={currentCategory === category ? "primary" : "secondary"}
-                    onClick={() => callback(category)}
+                    onClick={() => onChangeCategory(category)}
                 >
                     {category}
                 </Button>
