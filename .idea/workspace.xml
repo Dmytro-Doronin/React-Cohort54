@@ -4,62 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9f6934d-b3c7-4319-bf6f-cc75a7735911" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/eslint.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/public/vite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/api/base-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/api/categories/categories-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/api/categories/categories.type.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/api/products/products-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/api/products/products.type.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/assets/react.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/button/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/button/button.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/buttonList/ButtonList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/buttonList/buttonList.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/card/Card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/card/card.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/cardList/CardList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/cardList/cardList.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/layout/Layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/loader/Loader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/loader/loader.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/notificationCenter/NotificationCenter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/notificationCenter/notificationCenter.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/context/notificationContext/NotificationProvider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/context/notificationContext/NotificationsContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/context/notificationContext/NotificationsType.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/hooks/useFetch.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/hooks/useNotification.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/pages/homePage/HomePage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/pages/productPage/ProductPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/pages/productPage/productPage.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/router/MainRouter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/router/router.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/_fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/_globals.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/_normalize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/_utils.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/helpers/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/helpers/_index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/helpers/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/helpers/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/utils/get-error.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/utils/replace-fake.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/vite-env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/tsconfig.node.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/vite.config.ts" afterDir="false" />
-    </list>
+    <list default="true" id="c9f6934d-b3c7-4319-bf6f-cc75a7735911" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,26 +26,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "DMYTRO__DORONIN-w2-React",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Projects/React-Cohort54/week2/project/ecommerce/src/components",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev (1).executor": "Run",
-    "npm.dev.executor": "Run",
-    "ts.external.directory.path": "D:\\Projects\\React-Cohort54\\week2\\project\\ecommerce\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;DMYTRO__DORONIN-w2-React&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/React-Cohort54/week2/project/ecommerce/src/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev (1).executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Projects\\React-Cohort54\\week2\\project\\ecommerce\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\React-Cohort54\week2\project\ecommerce\src\components" />
@@ -162,7 +107,7 @@
       <workItem from="1766083081981" duration="1934000" />
       <workItem from="1766340497498" duration="23000" />
       <workItem from="1766590734596" duration="124000" />
-      <workItem from="1766590871940" duration="12211000" />
+      <workItem from="1766590871940" duration="12338000" />
     </task>
     <servers />
   </component>

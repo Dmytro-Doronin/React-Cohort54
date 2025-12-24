@@ -2,7 +2,7 @@ import {useEffect} from "react";
 import { useParams } from 'react-router-dom'
 
 
-import styles from "./ProductPage.module.scss";
+import styles from "./productPage.module.scss";
 import {useFetch} from "../../hooks/useFetch.tsx";
 import {getProductById} from "../../api/products/products-api.ts";
 import {Loader} from "../../components/loader/Loader.tsx";
