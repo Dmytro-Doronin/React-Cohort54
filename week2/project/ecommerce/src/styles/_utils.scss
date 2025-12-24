@@ -1,0 +1,33 @@
+@use 'sass:math';
+@use './helpers' as *;
+
+.container {
+  position: relative;
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
+.accent-color {
+  color: var(--color-accent);
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.invisible {
+  @include invisible;
+}
+
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include mobile-above {
+    display: none !important;
+  }
+}

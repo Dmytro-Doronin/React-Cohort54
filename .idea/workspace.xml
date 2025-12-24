@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c9f6934d-b3c7-4319-bf6f-cc75a7735911" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/eslint.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/public/vite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/api/base-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/api/categories/categories-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/api/categories/categories.type.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/api/products/products-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/api/products/products.type.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/assets/react.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/button/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/button/button.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/buttonList/ButtonList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/buttonList/buttonList.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/card/Card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/card/card.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/cardList/CardList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/cardList/cardList.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/layout/Layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/loader/Loader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/loader/loader.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/notificationCenter/NotificationCenter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/components/notificationCenter/notificationCenter.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/context/notificationContext/NotificationProvider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/context/notificationContext/NotificationsContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/context/notificationContext/NotificationsType.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/hooks/useFetch.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/hooks/useNotification.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/pages/homePage/HomePage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/pages/productPage/ProductPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/pages/productPage/productPage.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/router/MainRouter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/router/router.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/_fonts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/_globals.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/_normalize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/_utils.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/helpers/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/helpers/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/helpers/_media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/helpers/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/styles/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/utils/get-error.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/utils/replace-fake.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/src/vite-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/tsconfig.node.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week2/project/ecommerce/vite.config.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="DMYTRO_DORONIN-w1-react" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="36wQ14EcG8zI3ABPglOIeYY7Dzo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "DMYTRO__DORONIN-w2-React",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Projects/React-Cohort54/week2/project/ecommerce/src/components",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev (1).executor": "Run",
+    "npm.dev.executor": "Run",
+    "ts.external.directory.path": "D:\\Projects\\React-Cohort54\\week2\\project\\ecommerce\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\React-Cohort54\week2\project\ecommerce\src\components" />
+      <recent name="D:\Projects\React-Cohort54\week2\project\ecommerce\src" />
+      <recent name="D:\Projects\React-Cohort54\week2\project\ecommerce\context" />
+      <recent name="D:\Projects\React-Cohort54\week2\project\ecommerce\src\hooks" />
+      <recent name="D:\Projects\React-Cohort54\week2\project" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\React-Cohort54\week2\project\ecommerce\src" />
+      <recent name="D:\Projects\React-Cohort54\week2\project" />
+      <recent name="D:\Projects\React-Cohort54\week1\project\ecommerce\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/week2/project/ecommerce/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/week1/project/ecommerce/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev (1)" />
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c9f6934d-b3c7-4319-bf6f-cc75a7735911" name="Changes" comment="" />
+      <created>1765914936031</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765914936031</updated>
+      <workItem from="1765914937342" duration="4445000" />
+      <workItem from="1765982267287" duration="6598000" />
+      <workItem from="1766083081981" duration="1934000" />
+      <workItem from="1766340497498" duration="23000" />
+      <workItem from="1766590734596" duration="124000" />
+      <workItem from="1766590871940" duration="12211000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
