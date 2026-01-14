@@ -10,13 +10,13 @@ describe("Categories", () => {
     cy.visit("https://hyf-react-w2-example.netlify.app/");
   });
 
-  it("Starts with no categories selected", () => {
+  it("Starts with no categoriesVariables.ts selected", () => {
     /**
      * Sometimes you want to isolate a part of the page for your queries and assertions.
      * To do that you can use the `within` command that will do whatever callback function you give inside of that element.
      */
-    cy.get('[data-testid="categories-list"]').within(() => {
-      // Let's first check that there are 4 categories!
+    cy.get('[data-testid="categoriesVariables.ts-list"]').within(() => {
+      // Let's first check that there are 4 categoriesVariables.ts!
       cy.get('[data-testid="category-item"]').should("have.length", 4);
 
       // Now let's check that none of them are selected. To do this we added a data-selected property to our DOM.
@@ -25,7 +25,7 @@ describe("Categories", () => {
   });
 
   it("Selecting a category should filter the list", () => {
-    cy.get('[data-testid="categories-list"]').within(() => {
+    cy.get('[data-testid="categoriesVariables.ts-list"]').within(() => {
       // Check that none are selected
       cy.get('[data-selected="false"]').should("have.length", 4);
     });
@@ -33,7 +33,7 @@ describe("Categories", () => {
     // Get a baseline check that we have 20 products
     cy.get('[data-testid="product-link"]').should("have.length", 20);
 
-    cy.get('[data-testid="categories-list"]').within(() => {
+    cy.get('[data-testid="categoriesVariables.ts-list"]').within(() => {
       cy.get('[data-elementid="electronics"]').click();
 
       // Check that the category is selected

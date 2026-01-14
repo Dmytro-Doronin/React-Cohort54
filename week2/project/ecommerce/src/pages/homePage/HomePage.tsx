@@ -8,6 +8,7 @@ import { getAllCategories } from "../../api/categories/categories-api.ts";
 import type { categoriesType } from "../../api/categories/categories.type.ts";
 import { ButtonList } from "../../components/buttonList/ButtonList.tsx";
 import { CardList } from "../../components/cardList/CardList.tsx";
+import {allCategories} from "../../variables/categoriesVariables.ts";
 
 export const HomePage = () => {
   const {
@@ -20,19 +21,19 @@ export const HomePage = () => {
     data: productsForSingleCategory,
     request: getProductsForSingleCategoryRequest,
     loading: productsForSingleCategoryLoading,
-  } = useFetch(getProductsForSingleCategory);
+  } = useFetch(getProductsForSingleCategory, "Products");
 
   const {
     data: categories,
     request: getCategories,
     loading: categoriesLoading,
-  } = useFetch(getAllCategories);
+  } = useFetch(getAllCategories, "Categories");
 
-  const [currentCategory, setCurrentCategory] = useState<categoriesType>("All");
+  const [currentCategory, setCurrentCategory] = useState<categoriesType>(allCategories);
 
   const onChangeCategory = (category: categoriesType) => {
     if (category === currentCategory) {
-      setCurrentCategory("All");
+      setCurrentCategory(allCategories);
       return;
     }
 
@@ -40,7 +41,7 @@ export const HomePage = () => {
   };
 
   useEffect(() => {
-    if (currentCategory === "All") {
+    if (currentCategory === allCategories) {
       if (!allProducts) {
         getAllProductsRequest();
       }
@@ -58,7 +59,7 @@ export const HomePage = () => {
     getCategories();
   }, []);
 
-  const isAll = currentCategory === "All";
+  const isAll = currentCategory === allCategories;
 
   const products = useMemo(() => {
     return (isAll ? allProducts : productsForSingleCategory) ?? [];

@@ -15,7 +15,7 @@
  *   "value": {
  *      "id": number,
  *      "joke": string,
- *      "categories": Array of strings
+ *      "categoriesVariables.ts": Array of strings
  *   }
  * }
  */

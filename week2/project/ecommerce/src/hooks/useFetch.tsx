@@ -4,6 +4,7 @@ import { useNotification } from "./useNotification.tsx";
 
 export const useFetch = <T, A extends unknown[] = unknown[]>(
   callback: (...args: A) => Promise<T>,
+  label?: string,
 ) => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState<T | null>(null);
@@ -21,8 +22,9 @@ export const useFetch = <T, A extends unknown[] = unknown[]>(
         return result;
       } catch (err: unknown) {
         const message = getErrorMessage(err);
-        setError(message);
-        notify({ variant: "error", message: message || "Unknown error" });
+        const finalMessage = label ? `${label}: ${message}` : message;
+        setError(finalMessage);
+        notify({ variant: "error", message: finalMessage});
         return null;
       } finally {
         setLoading(false);
