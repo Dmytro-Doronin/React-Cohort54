@@ -1,5 +1,4 @@
-@use 'helpers' as *;
-
+@use "helpers" as *;
 
 html {
   scroll-behavior: smooth;
@@ -24,7 +23,8 @@ main {
   transition: none !important;
 }
 
-p, span {
+p,
+span {
   font-weight: 300;
 }
 
@@ -35,11 +35,12 @@ input:hover,
 textarea:hover,
 select:hover,
 span:hover,
-*:hover,{
+*:hover {
   transition-duration: var(--transition-duration);
 }
 
-a, button > svg {
+a,
+button > svg {
   color: inherit;
 
   @include hover {
@@ -52,29 +53,39 @@ a, button > svg {
   }
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   color: var(--color-light-100);
   font-weight: 300;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   @include fluid-text(96, 30);
 }
 
-h2, .h2 {
+h2,
+.h2 {
   @include fluid-text(44, 24);
 }
 
-h3, .h3 {
+h3,
+.h3 {
   @include fluid-text(24, 20);
 }
 
-h3, .h4 {
+h3,
+.h4 {
   @include fluid-text(18, 14);
 }
 

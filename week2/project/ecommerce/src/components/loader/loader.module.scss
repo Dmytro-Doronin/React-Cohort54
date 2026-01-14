@@ -1,4 +1,4 @@
-@use '../../styles/helpers' as *;
+@use "../../styles/helpers" as *;
 
 .loaderWrapper {
   display: flex;
@@ -23,6 +23,6 @@
 
 @keyframes l1 {
   to {
-    transform: rotate(.5turn)
+    transform: rotate(0.5turn);
   }
 }

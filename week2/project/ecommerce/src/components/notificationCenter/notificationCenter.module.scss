@@ -1,4 +1,4 @@
-@use '../../styles/helpers' as *;
+@use "../../styles/helpers" as *;
 
 .notificationWrapper {
   position: fixed;
@@ -30,7 +30,16 @@
 }
 
 @keyframes fadeOut {
-  0% { opacity: 1; transform: translateY(0); }
-  90% { opacity: 1; transform: translateY(0); }
-  100% { opacity: 0; transform: translateY(#{rem(20)}); }
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(#{rem(20)});
+  }
 }

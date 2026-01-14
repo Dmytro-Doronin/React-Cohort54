@@ -1,23 +1,23 @@
-type ApiError = { error: string }
+type ApiError = { error: string };
 
 const isRecord = (v: unknown): v is Record<string, unknown> =>
-    typeof v === "object" && v !== null
+  typeof v === "object" && v !== null;
 
 const hasStringError = (v: unknown): v is ApiError =>
-    isRecord(v) && typeof v.error === "string"
+  isRecord(v) && typeof v.error === "string";
 
 export const getErrorMessage = (err: unknown): string => {
-    if (err instanceof Error) {
-        return err.message
-    }
+  if (err instanceof Error) {
+    return err.message;
+  }
 
-    if (typeof err === "string") {
-        return err
-    }
+  if (typeof err === "string") {
+    return err;
+  }
 
-    if (hasStringError(err)) {
-        return err.error
-    }
+  if (hasStringError(err)) {
+    return err.error;
+  }
 
-    return "Unknown error"
-}
+  return "Unknown error";
+};

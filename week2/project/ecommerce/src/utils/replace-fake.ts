@@ -1,3 +1,3 @@
 export const replaceFake = (str: string) => {
-    return str.replace(/^fake:\s*/i, "");
-}
+  return str.replace(/^fake:\s*/i, "");
+};

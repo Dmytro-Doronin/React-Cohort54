@@ -1,5 +1,4 @@
-@use '../../styles/helpers' as *;
-
+@use "../../styles/helpers" as *;
 
 :root {
   /* vars */
@@ -10,7 +9,6 @@
   --radius: #{rem(22)};
 
   --ease: cubic-bezier(0.5, 1, 0.89, 1);
-
 }
 
 .card {
@@ -25,7 +23,7 @@
   transition-timing-function: var(--ease);
   filter: blur(4px);
 
-  font-family: 'Asap', sans-serif;
+  font-family: "Asap", sans-serif;
   color: #737985;
 
   position: relative;
@@ -34,10 +32,24 @@
   border-radius: var(--radius);
   border: var(--border) solid var(--border-color);
   padding: 1em;
-  background: linear-gradient(235deg, hsl(var(--hue1) 50% 10% / 0.8), hsl(var(--hue1) 50% 10% / 0) 33%), linear-gradient(45deg , hsl(var(--hue2) 50% 10% / 0.8), hsl(var(--hue2) 50% 10% / 0) 33%), linear-gradient(hsl(220deg 25% 4.8% / 0.66));
+  background:
+    linear-gradient(
+      235deg,
+      hsl(var(--hue1) 50% 10% / 0.8),
+      hsl(var(--hue1) 50% 10% / 0) 33%
+    ),
+    linear-gradient(
+      45deg,
+      hsl(var(--hue2) 50% 10% / 0.8),
+      hsl(var(--hue2) 50% 10% / 0) 33%
+    ),
+    linear-gradient(hsl(220deg 25% 4.8% / 0.66));
   backdrop-filter: blur(12px);
-  box-shadow: hsl(var(--hue2) 50% 2%) 0px 10px 16px -8px, hsl(var(--hue2) 50% 4%) 0px 20px 36px -14px;
+  box-shadow:
+    hsl(var(--hue2) 50% 2%) 0px 10px 16px -8px,
+    hsl(var(--hue2) 50% 4%) 0px 20px 36px -14px;
   cursor: pointer;
+  z-index: 2;
 }
 
 .card:not(.open)::before,
@@ -48,9 +60,7 @@
   animation: glowoff 0.25s var(--ease) both;
 }
 
-
 .card.open {
-
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
@@ -103,7 +113,6 @@
 .card .shine,
 .card .shine::before,
 .card .shine::after {
-
   /* shine is the bright white-ish inner pixel-wide lights */
 
   pointer-events: none;
@@ -127,17 +136,17 @@
 
   --start: 12%;
   background: conic-gradient(
-                  from var(--conic, -45deg) at center in oklch,
-                  transparent var(--start,0%), hsl( var(--hue), var(--sat,80%), var(--lit,60%)), transparent  var(--end,50%)
-  ) border-box;
+      from var(--conic, -45deg) at center in oklch,
+      transparent var(--start, 0%),
+      hsl(var(--hue), var(--sat, 80%), var(--lit, 60%)),
+      transparent var(--end, 50%)
+    )
+    border-box;
 
-  mask:
-          linear-gradient(transparent),
-          linear-gradient(black);
+  mask: linear-gradient(transparent), linear-gradient(black);
   mask-repeat: no-repeat;
   mask-clip: padding-box, border-box;
   mask-composite: subtract;
-
 }
 
 .card .shine::before,
@@ -153,10 +162,11 @@
   --start: 17%;
   --end: 33%;
   background: conic-gradient(
-                  from var(--conic, -45deg) at center in oklch,
-                  transparent var(--start,0%), hsl( var(--hue), var(--sat,80%), var(--lit,85%)), transparent var(--end,50%)
+    from var(--conic, -45deg) at center in oklch,
+    transparent var(--start, 0%),
+    hsl(var(--hue), var(--sat, 80%), var(--lit, 85%)),
+    transparent var(--end, 50%)
   );
-
 }
 
 .card .shine-bottom {
@@ -167,7 +177,6 @@
 }
 
 .card .glow {
-
   /* glow is the sparse colour bleed with noise */
 
   pointer-events: none;
@@ -186,7 +195,7 @@
   left: auto;
   bottom: auto;
 
-  mask: url('https://assets.codepen.io/13471/noise-base.png');
+  mask: url("https://assets.codepen.io/13471/noise-base.png");
   mask-mode: luminance;
   mask-size: 29%;
 
@@ -209,17 +218,17 @@
     border: inherit;
     border-radius: inherit;
     background: conic-gradient(
-                    from var(--conic, -45deg) at center in oklch,
-                    transparent var(--start,0%), hsl( var(--hue), var(--sat,95%), var(--lit,60%)), transparent  var(--end,50%)
-    ) border-box;
-    mask:
-            linear-gradient(transparent),
-            linear-gradient(black);
+        from var(--conic, -45deg) at center in oklch,
+        transparent var(--start, 0%),
+        hsl(var(--hue), var(--sat, 95%), var(--lit, 60%)),
+        transparent var(--end, 50%)
+      )
+      border-box;
+    mask: linear-gradient(transparent), linear-gradient(black);
     mask-repeat: no-repeat;
     mask-clip: padding-box, border-box;
     mask-composite: subtract;
     filter: saturate(2) brightness(1);
-
   }
 
   &::after {
@@ -235,11 +244,9 @@
   }
   &.glow-bottom::after {
   }
-
 }
 
 .card .glow-bright {
-
   /* glow-bright is a sharper colour outline to accentuate the shine */
 
   --lit: 80%;
@@ -286,7 +293,7 @@
 
 .card input {
   --tint2: hsl(var(--hue2) 50% 90% / 0.1);
-  font-family: 'Asap', sans-serif;
+  font-family: "Asap", sans-serif;
   font-weight: 300;
   box-shadow: 0 0 0 1px transparent;
   border: 1px solid hsl(var(--hue2) 13% 18.5% / 0.5);
@@ -332,14 +339,16 @@
   gap: 0.5em;
   border-radius: calc(var(--radius) * 0.33333);
   border: 1px solid transparent;
-  transition: all 0.3s ease-in, --item-opacity 0.3s ease-in;
-  background:
-          linear-gradient(
-                          90deg  in oklch,
-                          hsl(var(--hue1) 29% 13% / var(--item-opacity)),
-                          hsl(var(--hue1) 30% 15% / var(--item-opacity)) 24% 32%,
-                          hsl(var(--hue1) 5% 7% / var(--item-opacity))
-          ) border-box;
+  transition:
+    all 0.3s ease-in,
+    --item-opacity 0.3s ease-in;
+  background: linear-gradient(
+      90deg in oklch,
+      hsl(var(--hue1) 29% 13% / var(--item-opacity)),
+      hsl(var(--hue1) 30% 15% / var(--item-opacity)) 24% 32%,
+      hsl(var(--hue1) 5% 7% / var(--item-opacity))
+    )
+    border-box;
 
   &::after {
     content: "";
@@ -347,16 +356,14 @@
     inset: 0;
     border-radius: inherit;
     border: inherit;
-    background:
-            linear-gradient(
-                            90deg  in oklch,
-                            hsl(var(--hue1) 15% 16% / var(--item-opacity)),
-                            hsl(var(--hue1) 40% 24% / var(--item-opacity)) 20% 32%,
-                            hsl(var(--hue1) 2% 12% / var(--item-opacity))
-            ) border-box;
-    mask:
-            linear-gradient(transparent),
-            linear-gradient(black);
+    background: linear-gradient(
+        90deg in oklch,
+        hsl(var(--hue1) 15% 16% / var(--item-opacity)),
+        hsl(var(--hue1) 40% 24% / var(--item-opacity)) 20% 32%,
+        hsl(var(--hue1) 2% 12% / var(--item-opacity))
+      )
+      border-box;
+    mask: linear-gradient(transparent), linear-gradient(black);
     mask-repeat: no-repeat;
     mask-clip: padding-box, border-box;
     mask-composite: subtract;
@@ -367,7 +374,9 @@
   &:hover::after,
   &.selected::after {
     --item-opacity: 0.5;
-    transition: all 0.1s ease-out, --item-opacity 0.1s ease-out;
+    transition:
+      all 0.1s ease-out,
+      --item-opacity 0.1s ease-out;
     color: white;
   }
 
@@ -405,6 +414,15 @@
   height: 20px;
 }
 
+.cardButton {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: rem(40);
+  height: rem(40);
+  color: white;
+  z-index: 1000;
+}
 
 @keyframes glow {
   0% {
@@ -448,7 +466,8 @@
     opacity: 0;
     --item-opacity: 0.5;
   }
-  21%, 100% {
+  21%,
+  100% {
     opacity: 1;
     --item-opacity: 1;
   }

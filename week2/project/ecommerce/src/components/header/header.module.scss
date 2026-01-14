@@ -1,0 +1,29 @@
+@use "../../styles/helpers" as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--header-height);
+  background-color: hsl(var(--color-default-100) / 1);
+  border-bottom: rem(1) solid hsl(var(--color-default-300) / 1);
+  opacity: 1;
+}
+
+.inner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  gap: rem(10);
+}
+
+.link {
+  &:hover {
+    color: var(--color-primary);
+  }
+}

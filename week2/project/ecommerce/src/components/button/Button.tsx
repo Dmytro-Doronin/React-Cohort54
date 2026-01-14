@@ -1,22 +1,30 @@
-import type {ComponentPropsWithoutRef, ElementType, ReactNode} from 'react'
+import type { ComponentPropsWithoutRef, ElementType, ReactNode } from "react";
 
-import styles from './button.module.scss'
+import styles from "./button.module.scss";
 
-export type ButtonProps<T extends ElementType = 'button'> = {
-  as?: T
-  children: ReactNode
-  variant?: 'primary' | 'secondary' | 'tertiary' | 'link' | 'icon'
-  fullWidth?: boolean
-  className?: string
-} & ComponentPropsWithoutRef<T>
+export type ButtonProps<T extends ElementType = "button"> = {
+  as?: T;
+  children: ReactNode;
+  variant?: "primary" | "secondary" | "tertiary" | "link" | "icon";
+  fullWidth?: boolean;
+  className?: string;
+} & ComponentPropsWithoutRef<T>;
 
-export const Button = <T extends ElementType = 'button'>(props: ButtonProps<T>) => {
-  const { variant = 'primary', fullWidth, className, as: Component = 'button', ...rest } = props
+export const Button = <T extends ElementType = "button">(
+  props: ButtonProps<T>,
+) => {
+  const {
+    variant = "primary",
+    fullWidth,
+    className,
+    as: Component = "button",
+    ...rest
+  } = props;
 
   return (
     <Component
-      className={`${styles[variant]} ${fullWidth ? styles.fullWidth : ''} ${className}`}
+      className={`${styles[variant]} ${fullWidth ? styles.fullWidth : ""} ${className}`}
       {...rest}
     ></Component>
-  )
-}
+  );
+};
